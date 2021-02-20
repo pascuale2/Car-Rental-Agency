@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22337F60-92B5-41DC-A5EB-C843945A304F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_delete_employee_info_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_delete_employee_info_admin.Designer.cs">
+      <DependentUpon>add_delete_employee_info_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_update_customer_info_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_update_customer_info_employee.Designer.cs">
+      <DependentUpon>add_update_customer_info_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_update_customer_info_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_update_customer_info_admin.Designer.cs">
+      <DependentUpon>add_update_customer_info_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_main_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_main_menu.Designer.cs">
+      <DependentUpon>admin_main_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookings_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookings_menu.Designer.cs">
+      <DependentUpon>bookings_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookings_menu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookings_menu1.Designer.cs">
+      <DependentUpon>bookings_menu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookings_menu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookings_menu2.Designer.cs">
+      <DependentUpon>bookings_menu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookings_menu3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookings_menu3.Designer.cs">
+      <DependentUpon>bookings_menu3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_inquiry_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_inquiry_employee.Designer.cs">
+      <DependentUpon>customer_inquiry_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentation.Designer.cs">
+      <DependentUpon>Documentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_inquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_inquiry.Designer.cs">
+      <DependentUpon>employee_inquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports_menu.Designer.cs">
+      <DependentUpon>reports_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_conString.cs" />
+    <Compile Include="customer_inquiry_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_inquiry_admin.Designer.cs">
+      <DependentUpon>customer_inquiry_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_main_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_main_menu.Designer.cs">
+      <DependentUpon>employee_main_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stock_inquiry_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_inquiry_employee.Designer.cs">
+      <DependentUpon>stock_inquiry_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stock_inquiry_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_inquiry_admin.Designer.cs">
+      <DependentUpon>stock_inquiry_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="information_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="information_menu.Designer.cs">
+      <DependentUpon>information_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_menu.Designer.cs">
+      <DependentUpon>main_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="add_delete_employee_info_admin.resx">
+      <DependentUpon>add_delete_employee_info_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_update_customer_info_employee.resx">
+      <DependentUpon>add_update_customer_info_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_update_customer_info_admin.resx">
+      <DependentUpon>add_update_customer_info_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_main_menu.resx">
+      <DependentUpon>admin_main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookings_menu.resx">
+      <DependentUpon>bookings_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookings_menu1.resx">
+      <DependentUpon>bookings_menu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookings_menu2.resx">
+      <DependentUpon>bookings_menu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookings_menu3.resx">
+      <DependentUpon>bookings_menu3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_inquiry_employee.resx">
+      <DependentUpon>customer_inquiry_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_inquiry_admin.resx">
+      <DependentUpon>customer_inquiry_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentation.resx">
+      <DependentUpon>Documentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_inquiry.resx">
+      <DependentUpon>employee_inquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_main_menu.resx">
+      <DependentUpon>employee_main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports_menu.resx">
+      <DependentUpon>reports_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_inquiry_employee.resx">
+      <DependentUpon>stock_inquiry_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_inquiry_admin.resx">
+      <DependentUpon>stock_inquiry_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="information_menu.resx">
+      <DependentUpon>information_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_menu.resx">
+      <DependentUpon>main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
